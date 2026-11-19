@@ -1,0 +1,138 @@
+/* ========================================
+   TOPBAR / NAVBAR
+======================================== */
+
+.topbar {
+  height: 72px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.breadcrumb b {
+  color: #cbd5e1;
+}
+
+.breadcrumb strong {
+  color: #334155;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.notification-btn,
+.logout-btn,
+.mobile-menu-btn {
+  border: 0;
+  background: transparent;
+  color: #64748b;
+}
+
+.notification-btn {
+  position: relative;
+}
+
+.notification-btn i {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #ef4444;
+}
+
+.top-profile {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.top-profile > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-avatar {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.top-profile b {
+  color: #334155;
+  font-size: 11px;
+}
+
+.top-profile span {
+  margin-top: 2px;
+  color: #94a3b8;
+  font-size: 9px;
+}
+
+.mobile-menu-btn {
+  display: none;
+}
+
+/* ========================================
+   RESPONSIVE TOPBAR
+======================================== */
+
+@media (max-width: 850px) {
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topbar {
+    height: 66px;
+    padding: 0 18px;
+  }
+
+  .top-profile > div:nth-child(2),
+  .top-profile > svg {
+    display: none;
+  }
+
+  .logout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .topbar {
+    padding: 0 12px;
+  }
+
+  .topbar-actions {
+    gap: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+/* Supply Monitoring page-specific styles */
+/* Shared empty / coming-soon presentation for this module */
+
+.coming-soon {
+  padding: 70px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: #fff;
+  text-align: center;
+}
+
+.coming-soon h2 {
+  margin: 0;
+  color: #172033;
+}
+
+.coming-soon p {
+  color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+  .coming-soon {
+    padding: 40px 20px;
+  }
+}

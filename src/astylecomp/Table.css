@@ -1,0 +1,54 @@
+/* ========================================
+   REUSABLE TABLE
+======================================== */
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 10px 8px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #94a3b8;
+  font-size: 9px;
+  font-weight: 800;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+td {
+  padding: 13px 8px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #475569;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+td b {
+  color: #172033;
+}
+
+td small {
+  display: block;
+  margin-top: 3px;
+  color: #94a3b8;
+  font-size: 9px;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+@media (max-width: 600px) {
+  th,
+  td {
+    padding: 10px 7px;
+  }
+}
